@@ -1,44 +1,44 @@
 @echo off
-echo ========== 开始同步 Git 仓库 ==========
+echo ========== ��ʼͬ�� Git �ֿ� ==========
 cd /d "%~dp0"
 
-:: 检查是否在 Git 仓库
+:: ����Ƿ��� Git �ֿ�
 git rev-parse --is-inside-work-tree >nul 2>&1
 if errorlevel 1 (
-    echo 错误：当前目录不是 Git 仓库！
+    echo ���󣺵�ǰĿ¼���� Git �ֿ⣡
     pause
     exit /b 1
 )
 
-:: 拉取远程最新代码（避免冲突）
+:: ��ȡԶ�����´��루�����ͻ��
 echo.
-echo [1/3] 拉取远程最新更改...
+echo [1/3] ��ȡԶ�����¸���...
 git pull origin main
 if errorlevel 1 (
-    echo 错误：拉取失败，请检查网络或冲突！
+    echo ������ȡʧ�ܣ�����������ͻ��
     pause
     exit /b 1
 )
 
-:: 添加所有更改并提交
+:: �������и��Ĳ��ύ
 echo.
-echo [2/3] 提交本地更改...
+echo [2/3] �ύ���ظ���...
 git add .
-git commit -m "自动同步: %date% %time%"
+git commit -m "�Զ�ͬ��: %date% %time%"
 if errorlevel 1 (
-    echo 警告：没有更改可提交，或提交失败！
+    echo ���棺û�и��Ŀ��ύ�����ύʧ�ܣ�
 )
 
-:: 推送到远程仓库
+:: ���͵�Զ�ֿ̲�
 echo.
-echo [3/3] 推送到远程仓库...
+echo [3/3] ���͵�Զ�ֿ̲�...
 git push origin main
 if errorlevel 1 (
-    echo 错误：推送失败，请检查权限或网络！
+    echo ��������ʧ�ܣ�����Ȩ�޻����磡
     pause
     exit /b 1
 )
 
 echo.
-echo ========== 同步完成！ ==========
+echo ========== ͬ����ɣ� ==========
 pause
