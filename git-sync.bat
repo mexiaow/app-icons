@@ -1,3 +1,5 @@
+chcp 65001
+
 @echo off
 echo ========== 开始同步 Git 仓库 ==========
 cd /d "%~dp0"
