@@ -26,7 +26,7 @@ if errorlevel 1 (
 echo.
 echo [2/3] 提交本地更改...
 git add .
-git commit -m "Auto-sync: $(date +"%Y-%m-%d %H:%M:%S")"
+git commit -m "Auto-sync: %date% %time%"
 if errorlevel 1 (
     echo 警告：没有更改可提交，或提交失败！
 )
