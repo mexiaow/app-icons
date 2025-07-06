@@ -1,9 +1,0 @@
-"C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code"
-
-
-"C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-
-"C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\Code.exe" --profile "Text Edit"
-
-
-"C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\Code.exe" --user-data-dir "D:\SoftMgr\Code-Text Edit\data" --extensions-dir "D:\SoftMgr\Code-Text Edit\extensions"
