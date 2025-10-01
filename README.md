@@ -13,8 +13,6 @@ app-icons/
 │   └── ...            # 更多应用图标
 ├── bg/                 # 背景图片目录
 ├── app.py              # Flask Webhook 服务器
-├── git-sync.bat        # Git 同步批处理脚本
-├── cdn.txt             # CDN 链接配置
 └── .gitignore          # Git 忽略文件配置
 ```
 
