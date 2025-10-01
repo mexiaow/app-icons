@@ -13,7 +13,6 @@ app-icons/
 │   └── ...            # 更多应用图标
 ├── bg/                 # 背景图片目录
 ├── app.py              # Flask Webhook 服务器
-└── .gitignore          # Git 忽略文件配置
 ```
 
 ## 🚀 功能特性
