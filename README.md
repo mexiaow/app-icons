@@ -79,12 +79,6 @@ app-icons/
 <img src="https://your-domain.com/app/alist.png" alt="Alist">
 ```
 
-### CDN 访问
-CDN 链接配置在 `cdn.txt` 文件中：
-```
-https://logo.xwat.cn/app/komari.png
-```
-
 ## 🔧 API 接口
 
 ### Webhook 接口
