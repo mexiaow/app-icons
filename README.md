@@ -60,8 +60,8 @@ app-icons/
 
 1. **配置 Git 远程仓库**
    ```bash
-   git remote add github https://github.com/username/app-icons.git
-   git remote add gitee https://gitee.com/username/app-icons.git
+   git remote add github https://github.com/mexiaow/app-icons.git
+   git remote add gitee https://gitee.com/mexiaow/app-icons.git
    ```
 
 2. **运行同步脚本**
